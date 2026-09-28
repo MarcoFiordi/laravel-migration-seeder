@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 50px 20px;
+
+    font-family: "Share Tech Mono", monospace;
+
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+.board {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    background-color: #1b1b1b;
+    border: 4px solid #333;
+    border-radius: 8px;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.board-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+
+    padding: 25px 30px;
+
+    background-color: #f5b800;
+    color: #111;
+
+    h1 {
+        font-size: 42px;
+        letter-spacing: 3px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+}
+
+.train-table {
+    width: 100%;
+}
+
+.train-row {
+    display: grid;
+
+    grid-template-columns:
+        110px
+        150px
+        1.4fr
+        1.4fr
+        1.4fr
+        130px;
+
+    align-items: center;
+
+    min-height: 70px;
+    padding: 12px 20px;
+
+    border-bottom: 1px solid #3a3a3a;
+
+    font-size: 17px;
+}
+
+.train-heading {
+    min-height: 50px;
+
+    background-color: #242424;
+    color: #aaa;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.train-code {
+    color: #f5b800;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 10px;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.on-time {
+    color: #58d68d;
+}
+
+.delayed {
+    color: #f5b800;
+}
+
+.cancelled {
+    color: #ff5c5c;
+}
